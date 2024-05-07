@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Blogs</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <div id="header"></div>
+
+    <script>
+        // Fetch and include the header file
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+    </script>
+
+    <main>
+
+        <a href="/" onclick="history.back();" class="left-0 mt-4 ml-4 flex items-center text-blue-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-black" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" clip-rule="evenodd" />
+            </svg>
+            <span class="mb-1 text-black">Back</span>
+        </a>
+
+        <section class="bg-cover bg-center text-white pt-7 pb-8 text-center">
+            <div class="container mx-auto">
+                <h1 class="text-5xl text-gray-900 md:text-4xl font-bold ">Our Blogs</h1>
+            </div>
+        </section>
+
+ 
+
+        <section id="productList" class="flex justify-center flex-wrap">
+            <!-- Product cards will be dynamically populated here -->
+        </section>
+
+        <section class="h-6">
+            <!-- Product cards will be dynamically populated here -->
+        </section>
+    </main>
+
+    <script>
+        var products = [
+            {
+                name: "Improve Seller Fees and Profitability",
+                description: "The lighting solution that transforms any wall into a customizable brilliance.",
+                image: "bill.jpg", // Replace with the path to your image
+                buyLink: "" // Replace with the external link for the Buy Now button
+            },
+            {
+                name: "Improve Seller Fees and Profitability",
+                description: "The lighting solution that transforms any wall into a customizable brilliance.",
+                image: "bill.jpg", // Replace with the path to your image
+                buyLink: "" // Replace with the external link for the Buy Now button
+            },
+            {
+                name: "Improve Seller Fees and Profitability",
+                description: "The lighting solution that transforms any wall into a customizable brilliance.",
+                image: "bill.jpg", // Replace with the path to your image
+                buyLink: "" // Replace with the external link for the Buy Now button
+            },
+            {
+                name: "Improve Seller Fees and Profitability",
+                description: "The lighting solution that transforms any wall into a customizable brilliance.",
+                image: "bill.jpg", // Replace with the path to your image
+                buyLink: "" // Replace with the external link for the Buy Now button
+            },
+      
+
+
+            // Add more products as needed
+        ];
+
+        function displayProducts(products) {
+            var productList = document.getElementById("productList");
+            productList.innerHTML = "";
+            products.forEach(function (product) {
+                var productCard = document.createElement("div");
+                productCard.classList.add( "w-full", "sm:w-1/5", "max-w-sm", "border", "rounded-lg", "mx-5", "mt-5",  "my-2");
+                productCard.innerHTML = `
+                    <img class="rounded-t-lg" src="${product.image}" alt="${product.name}" />
+                    <div class="p-5">
+                        <a href="#">
+                            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">${product.name}</h5>
+                        </a>
+                        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">${product.description}</p>
+                        <a href="${product.buyLink}" class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 mr-2">
+                            Read more
+                            <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                            </svg>
+                        </a>
+                    </div>`;
+                productList.appendChild(productCard);
+            });
+        }
+
+        // Initial call to display all products
+        displayProducts(products);
+    </script>
+
+<footer class="bg-white rounded-lg mt-10 shadow m-4">
+    <div class="w-full  mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+        <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/" class="hover:underline">Bill Chk</a>. All Rights Reserved.</span>
+        <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+            <li>
+                <a href="about.html" class="hover:underline">About</a>
+            </li>
+            <li>
+                <a href="privacy-policy.html" class="hover:underline mx-4 md:me-6">Privacy Policy</a>
+            </li>
+            <li>
+                <a href="disclaimer.html" class="hover:underline  mr-4 md:me-6">Disclaimer</a>
+            </li>
+            <li>
+                <a href="contact.html" class="hover:underline">Contact</a>
+            </li>
+        </ul>
+    </div>
+</footer>
+
+</body>
+
+</html>

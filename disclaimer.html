@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disclaimer - Daraz Profit Calculator</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white font-sans">
+    
+    <div id="header"></div>
+    
+    <script>
+        // Fetch and include the header file
+        fetch('header.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('header').innerHTML = html;
+            });
+    </script>
+    
+
+    <a href="/" onclick="history.back();" class="left-0 mt-4 ml-4 flex items-center text-blue-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-black" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" clip-rule="evenodd" />
+        </svg>
+        <span class="mb-1 text-black">Back</span>
+    </a>
+    
+    <section class="bg-cover bg-center text-white pt-7 pb-5 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-5xl text-gray-900 md:text-4xl font-bold ">Disclaimer</h1>
+        </div>
+    </section>
+    
+
+    <main class="container mt-5 mb-10 pt-6">
+        <section class="m-4">
+            <p class="mb-4">The information provided on this website is for general informational purposes only. While we strive to keep the information up to date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.</p>
+
+            <p class="mb-4">In no event will we be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website.</p>
+    
+            <p class="mb-4">Through this website, you are able to link to other websites that are not under the control of Bill Checker. We have no control over the nature, content, and availability of those sites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.</p>
+    
+            <p class="mb-4">Every effort is made to keep the website up and running smoothly. However, Bill Checker takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control.</p>
+    
+            <p class="mb-4">By using our website, you hereby consent to our disclaimer and agree to its terms.</p>
+    
+            <p class="mb-4">We reserve the right to modify, update, or remove any part of this disclaimer without prior notice. It is your responsibility to check this disclaimer periodically for changes. Continued use of the website following the posting of any changes constitutes acceptance of those changes.</p>
+    
+            <p class="mb-4">For any questions or concerns regarding this disclaimer, please contact us.</p>
+        </div>
+    </div>
+        </section>
+    </main>
+
+    <footer class="bg-white rounded-lg mb-3 shadow m-4">
+        <div class="w-full  mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/" class="hover:underline">Bill Chk</a>. All Rights Reserved.</span>
+            <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                <li>
+                    <a href="about.html" class="hover:underline">About</a>
+                </li>
+                <li>
+                    <a href="privacy-policy.html" class="hover:underline mx-4 md:me-6">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="disclaimer.html" class="hover:underline  mr-4 md:me-6">Disclaimer</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="hover:underline">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    
+</body>
+</html>

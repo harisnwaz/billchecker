@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta property="og:title" content="About">
+    <meta property="og:description" content="Learn more about our story, values, and team. Discover how we strive to make a difference and why we're passionate about what we do.">
+    <meta property="og:image" content="URL to an image representing your page">
+    <meta property="og:url" content="https://darazcalculator.netlify.app/about">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Daraz calculator"
+
+</head>
+<body class="bg-white font-poppins">
+    <header>
+
+        <!-- Header Section -->
+<div id="header"></div>
+    
+<script>
+    // Fetch and include the header file
+    fetch('header.html')
+        .then(response => response.text())
+        .then(html => {
+            document.getElementById('header').innerHTML = html;
+        });
+</script>
+    </header>
+
+
+    <a href="/" onclick="history.back();" class="left-0 mt-4 ml-4 flex items-center text-blue-500">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-black" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5" clip-rule="evenodd" />
+        </svg>
+        <span class="mb-1 text-black">Back</span>
+    </a>
+    
+    <section class="bg-cover bg-center text-white pt-7 pb-5 text-center">
+        <div class="container mx-auto">
+            <h1 class="text-5xl text-gray-900 md:text-4xl font-bold  ">About Us</h1>
+        </div>
+    </section>
+
+    <section class="py-8 mx-2 mb-11">
+        <div class="container mx-auto px-4">
+            <h3 class="mb-4">Welcome to Bill Checker, your ultimate destination for effortlessly managing your electricity and gas bills in Pakistan.</h3>
+            
+            <p class="mb-4">At Bill Checker, we understand the importance of staying on top of your utility bills without any hassle. Our platform is designed to simplify the process of checking your bills online, providing you with a convenient and user-friendly experience.</p>
+            
+            <p class="mb-4">With just a few clicks, you can access all your electricity and gas bills, check due dates, and keep track of your payment history. Whether you're a homeowner, a business owner, or managing multiple properties, Bill Checker is here to streamline your bill management process.</p>
+            
+            <p class="mb-4">Gone are the days of sifting through piles of paper bills or navigating confusing online portals. Our intuitive interface makes it easy to view, download, and manage your bills from anywhere, at any time.</p>
+            
+            <p class="mb-4">We take pride in providing a reliable and efficient solution for all your bill checking needs. Our platform is built with the latest security features to ensure the safety and privacy of your information.</p>
+            
+            <p class="mb-4">Thank you for choosing Bill Checker as your trusted partner in bill management. If you have any questions, concerns, or feedback, please don't hesitate to <a href="contact.html" class="text-blue-500 hover:underline">contact us</a>. Your feedback helps us improve our services.</p>
+            
+            <p class="mb-4">Experience the convenience of bill checking with Bill Checker today!</p>
+        </div>
+    </section>
+    
+    <div>
+        <footer class="bg-white rounded-lg shadow mx-4  mb-3">
+            <div class="w-full  mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="/" class="hover:underline">Bill Checker</a>. All Rights Reserved.</span>
+                <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+                    <li>
+                        <a href="about.html" class="hover:underline">About</a>
+                    </li>
+                    <li>
+                        <a href="privacy-policy.html" class="hover:underline mx-4 md:me-6">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a href="disclaimer.html" class="hover:underline  mr-4 md:me-6">Disclaimer</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" class="hover:underline">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        </div>
+    
+</body>
+</html>
+
